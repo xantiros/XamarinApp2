@@ -18,6 +18,28 @@ namespace XamarinApp2
 
             slider.Value = 0.5;
 
+            //Padding = new Thickness(20, 20, 20, 20);
+
+            if (Device.RuntimePlatform == Device.iOS) // w przypadku ios ustawiamy od góry padding
+                Padding = new Thickness(0, 20, 0, 0);
+
+            switch(Device.RuntimePlatform) //to samo
+            {
+                case Device.iOS:
+                    Padding = new Thickness(0, 20, 0, 0);
+                    break;
+                case Device.Android:
+                    Padding = new Thickness(0, 0, 0, 0);
+                    break;
+            }
+            Device.OnPlatform(
+                iOS: () =>
+                {
+                    Padding = new Thickness(0, 20, 0, 0);
+                }
+                );
+
+
             /*
             Content = new Label
             {
