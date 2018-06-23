@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinApp2.Android", "XamarinApp2\XamarinApp2.Android\XamarinApp2.Android.csproj", "{121849FB-6764-4E88-B7B0-DB4F1DB986C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinApp2", "XamarinApp2\XamarinApp2\XamarinApp2.csproj", "{12BD2319-6DD2-4379-8771-26753C4FF4AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XamarinApp2", "XamarinApp2\XamarinApp2\XamarinApp2.csproj", "{12BD2319-6DD2-4379-8771-26753C4FF4AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

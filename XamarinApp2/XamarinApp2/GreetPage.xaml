@@ -13,5 +13,6 @@
         <Label Text="{Binding Value, StringFormat='Value is {0:F2}'}" 
                Opacity="{Binding Value}"/>
         <Slider x:Name="slider"/>
+        <Button Text="Click Me" Clicked="Button_Clicked"></Button>
     </StackLayout>
 </ContentPage>

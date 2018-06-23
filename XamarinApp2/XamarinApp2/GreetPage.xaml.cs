@@ -51,6 +51,11 @@ namespace XamarinApp2
             */
 		}
 
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            DisplayAlert("<3", "Kocham Cię!", "ok");
+        }
+
         //private void Slider_ValueChanged(object sender, ValueChangedEventArgs e)
         //{
         //    label.Text = String.Format("Value is {0:F2}", e.NewValue);
