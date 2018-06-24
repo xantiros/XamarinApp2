@@ -11,7 +11,7 @@ namespace XamarinApp2
 		{
 			InitializeComponent();
 
-			MainPage = new QuotesPage();
+			MainPage = new AbsolutePage();
 		}
 
 		protected override void OnStart ()
