@@ -11,7 +11,7 @@ namespace XamarinApp2
 		{
 			InitializeComponent();
 
-			MainPage = new StackPageExcercise2();
+			MainPage = new GridPageExcercise();
 		}
 
 		protected override void OnStart ()
