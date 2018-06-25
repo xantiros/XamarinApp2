@@ -11,7 +11,7 @@ namespace XamarinApp2
 		{
 			InitializeComponent();
 
-			MainPage = new AbsolutePageExcercise2();
+			MainPage = new RelativePageExcercise();
 		}
 
 		protected override void OnStart ()
