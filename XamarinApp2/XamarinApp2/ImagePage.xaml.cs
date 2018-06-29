@@ -12,9 +12,9 @@ namespace XamarinApp2
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ImagePage : ContentPage
 	{
-		public ImagePage ()
-		{
-			InitializeComponent ();
+        public ImagePage()
+        {
+            InitializeComponent();
 
             //var imageSource = (UriImageSource) ImageSource.FromUri(new Uri("https://picsum.photos/1920/1080/?random/"));
 
@@ -24,6 +24,18 @@ namespace XamarinApp2
             //image.Source = imageSource;
             //image.Source = ImageSource.FromResource("XamarinApp2.Images.background.jpg");
 
+            switch(Device.RuntimePlatform)
+            {
+                case Device.iOS:
+                    btn.Image = (FileImageSource)ImageSource.FromFile("clock.png");
+                    break;
+                case Device.Android:
+                    btn.Image = (FileImageSource)ImageSource.FromFile("clock.png");
+                    break;
+                case Device.WPF:
+                    btn.Image = (FileImageSource)ImageSource.FromFile("Images/clock.png");
+                    break;
+            };
         }
 	}
 }

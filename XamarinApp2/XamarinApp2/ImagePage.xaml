@@ -5,14 +5,21 @@
              xmlns:local="clr-namespace:XamarinApp2.MarkapExtensions"
              BackgroundColor="Black">
 
-    <AbsoluteLayout>
+    <!--<AbsoluteLayout>
         <ActivityIndicator IsRunning="{Binding Source={x:Reference image}, Path=IsLoading}"
                            AbsoluteLayout.LayoutBounds="0.5, 0.5, 100, 100" AbsoluteLayout.LayoutFlags="PositionProportional"
                            Color="White"/>
-        <!--<Image x:Name="image" Aspect="AspectFill"
-               AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"/>-->
+        --><!--<Image x:Name="image" Aspect="AspectFill"
+               AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"/>--><!--
         <Image Source="{local:EmbeddedImage XamarinApp2.Images.background.jpg}" x:Name="image" Aspect="AspectFill"/>
-    </AbsoluteLayout>
-    
+    </AbsoluteLayout>-->
 
+    <Button  x:Name="btn">
+        <Button.Image>
+            <OnPlatform x:TypeArguments="FileImageSource"
+                        iOS="clock.png"
+                        Android="clock.png"
+                        WinPhone="Images/clock.png"/>
+        </Button.Image>
+    </Button>
 </ContentPage>
