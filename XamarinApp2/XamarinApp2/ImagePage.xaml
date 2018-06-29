@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinApp2.ImagePage"
              xmlns:local="clr-namespace:XamarinApp2.MarkapExtensions"
-             BackgroundColor="Black">
+             BackgroundColor="Black"
+             xmlns:ic="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin">
 
     <!--<AbsoluteLayout>
         <ActivityIndicator IsRunning="{Binding Source={x:Reference image}, Path=IsLoading}"
@@ -22,4 +23,12 @@
                         WinPhone="Images/clock.png"/>
         </Button.Image>
     </Button>
+
+    <ic:CircleImage 
+        WidthRequest="100"
+        HeightRequest="100"
+        Aspect="AspectFill"
+        Source="http://placekitten.com/400/300"
+        HorizontalOptions="Center"
+        VerticalOptions="Center"/>
 </ContentPage>
