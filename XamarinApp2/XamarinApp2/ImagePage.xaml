@@ -2,14 +2,17 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinApp2.ImagePage"
+             xmlns:local="clr-namespace: XamarinApp2.MarkapExtensions"
              BackgroundColor="Black">
 
     <AbsoluteLayout>
         <ActivityIndicator IsRunning="{Binding Source={x:Reference image}, Path=IsLoading}"
                            AbsoluteLayout.LayoutBounds="0.5, 0.5, 100, 100" AbsoluteLayout.LayoutFlags="PositionProportional"
                            Color="White"/>
-        <Image x:Name="image" Aspect="AspectFill"
-               AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"/>
+        <!--<Image x:Name="image" Aspect="AspectFill"
+               AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"/>-->
+        <Image Source="{local:EmbeddedImage XamarinApp2.Images.background.jpg}" x:Name="image" Aspect="AspectFill"/>
     </AbsoluteLayout>
+    
 
 </ContentPage>
