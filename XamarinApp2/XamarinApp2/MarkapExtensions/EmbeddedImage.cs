@@ -12,6 +12,7 @@ namespace XamarinApp2.MarkapExtensions
         {
             if (String.IsNullOrWhiteSpace(ResourceId))
                 return null;
+
            return ImageSource.FromResource(ResourceId);
         }
     }

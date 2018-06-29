@@ -22,8 +22,7 @@ namespace XamarinApp2
             //imageSource.CachingEnabled = false;
             //imageSource.CacheValidity = TimeSpan.FromHours(1);
             //image.Source = imageSource;
-            image.Source = ImageSource.FromResource("XamarinApp2.Images.background.jpg");
-
+            //image.Source = ImageSource.FromResource("XamarinApp2.Images.background.jpg");
 
         }
 	}
