@@ -11,7 +11,7 @@ namespace XamarinApp2
 		{
 			InitializeComponent();
 
-			MainPage = new ImagePage();
+			MainPage = new ImagesExcercise();
 		}
 
 		protected override void OnStart ()
