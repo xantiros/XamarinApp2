@@ -2,5 +2,35 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinApp2.Lists.ListViews">
-    <ListView x:Name="listViews" SeparatorColor="Blue"/>
+
+    <ListView x:Name="listViews"
+              IsGroupingEnabled="True"
+              GroupDisplayBinding="{Binding Title}"
+              GroupShortNameBinding="{Binding ShortTitle}"
+              ItemTapped="listViews_ItemTapped"
+              ItemSelected="listViews_ItemSelected">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="{Binding Name}" Detail="{Binding Status}"/>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+    
+    <!--<ListView x:Name="listViews" HasUnevenRows="True">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Orientation="Horizontal" Padding="5">
+                        <Image Source="{Binding ImageUrl}"/>
+                        <StackLayout HorizontalOptions="StartAndExpand">
+                            <Label Text="{Binding Name}"/>
+                            <Label Text="{Binding Status}"/>
+                        </StackLayout>
+                        <Button Text="Follow"/>
+                    </StackLayout>
+                </ViewCell>
+                --><!--<ImageCell Text="{Binding Name}" Detail="{Binding Status}" ImageSource="{Binding ImageUrl}" />--><!--
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>-->
 </ContentPage>
