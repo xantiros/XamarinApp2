@@ -68,5 +68,21 @@ namespace XamarinApp2.Lists
             var contact = (sender as MenuItem).CommandParameter as Contact;
             _contacts.Remove(contact);
         }
+
+        private void listViews_Refreshing(object sender, EventArgs e)
+        {
+            listViews.ItemsSource = GetContacts();
+            listViews.IsRefreshing = false;
+        }
+
+        List<Contact> GetContacts()
+        {
+            return new List<Contact>
+            {
+                new Contact {Name = "Ben", ImageUrl = "https://source.unsplash.com/collection/368775/100x100" },
+                new Contact {Name = "Bob", ImageUrl = "https://source.unsplash.com/collection/368775/100x100", Status = "Hey, let's talk." },
+                new Contact {Name = "Johon", ImageUrl = "https://source.unsplash.com/collection/368775/100x100", Status = "2." }
+            };
+        }
     }
 }
