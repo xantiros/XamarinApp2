@@ -13,11 +13,13 @@ namespace XamarinApp2
 		{
 			InitializeComponent();
 
-			MainPage = new NavigationPage (new WelcomePage())
-            {
-                BarBackgroundColor = Color.Gray,
-                BarTextColor = Color.White
-            };
+            MainPage = new NavigationPage(new ContactsPage());
+
+			//MainPage = new NavigationPage (new WelcomePage())
+   //         {
+   //             BarBackgroundColor = Color.Gray,
+   //             BarTextColor = Color.White
+            //};
 		}
 
 		protected override void OnStart ()
