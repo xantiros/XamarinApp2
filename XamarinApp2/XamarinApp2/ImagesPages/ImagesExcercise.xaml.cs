@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -27,7 +22,7 @@ namespace XamarinApp2
         {
             image.Source = new UriImageSource
             {
-                Uri = new Uri(String.Format("http://lorempixel.com/1920/1080/city/{0}", _currentImageId)),
+                Uri = new Uri(String.Format("https://source.unsplash.com/1920x1280?city?{0}", _currentImageId)),
                 CachingEnabled = false
             };
         }

@@ -1,6 +1,7 @@
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamarinApp2.Lists;
 
 [assembly: XamlCompilation (XamlCompilationOptions.Compile)]
 namespace XamarinApp2
@@ -11,7 +12,7 @@ namespace XamarinApp2
 		{
 			InitializeComponent();
 
-			MainPage = new ImagesExcercise();
+			MainPage = new ListViews();
 		}
 
 		protected override void OnStart ()

@@ -18,55 +18,61 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="ImagesExcercise.xaml.cs">
+    <Compile Update="ImagesPages\ImagesExcercise.xaml.cs">
       <DependentUpon>ImagesExcercise.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Lists\ListViews.xaml.cs">
+      <DependentUpon>ListViews.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="AbsolutePage.xaml">
+    <EmbeddedResource Update="AbsolutePages\AbsolutePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="AbsolutePageExcercise2.xaml">
+    <EmbeddedResource Update="AbsolutePages\AbsolutePageExcercise2.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="AbsolutePageExercise.xaml">
+    <EmbeddedResource Update="AbsolutePages\AbsolutePageExercise.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="GreetPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="GridPage.xaml">
+    <EmbeddedResource Update="GridPages\GridPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="GridPageExcercise.xaml">
+    <EmbeddedResource Update="GridPages\GridPageExcercise.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="GridPageExcercise2.xaml">
+    <EmbeddedResource Update="GridPages\GridPageExcercise2.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="ImagePage.xaml">
+    <EmbeddedResource Update="ImagesPages\ImagePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="ImagesExcercise.xaml">
+    <EmbeddedResource Update="ImagesPages\ImagesExcercise.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Lists\ListViews.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="QuotesPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="RelativePage.xaml">
+    <EmbeddedResource Update="RelativePages\RelativePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="RelativePageExcercise.xaml">
+    <EmbeddedResource Update="RelativePages\RelativePageExcercise.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="StackPage.xaml">
+    <EmbeddedResource Update="StackPages\StackPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="StackPageExcercise.xaml">
+    <EmbeddedResource Update="StackPages\StackPageExcercise.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="StackPageExcercise2.xaml">
+    <EmbeddedResource Update="StackPages\StackPageExcercise2.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
