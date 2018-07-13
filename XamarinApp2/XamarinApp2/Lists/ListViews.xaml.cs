@@ -75,14 +75,24 @@ namespace XamarinApp2.Lists
             listViews.IsRefreshing = false;
         }
 
-        List<Contact> GetContacts()
+        IEnumerable<Contact> GetContacts(string searchText = null)
         {
-            return new List<Contact>
+            var contacts =  new List<Contact>
             {
                 new Contact {Name = "Ben", ImageUrl = "https://source.unsplash.com/collection/368775/100x100" },
                 new Contact {Name = "Bob", ImageUrl = "https://source.unsplash.com/collection/368775/100x100", Status = "Hey, let's talk." },
                 new Contact {Name = "Johon", ImageUrl = "https://source.unsplash.com/collection/368775/100x100", Status = "2." }
             };
+
+            if (String.IsNullOrWhiteSpace(searchText))
+                return contacts;
+
+            return contacts.Where(c => c.Name.StartsWith(searchText));
+        }
+
+        private void SearchBar_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            listViews.ItemsSource = GetContacts(e.NewTextValue);
         }
     }
 }
