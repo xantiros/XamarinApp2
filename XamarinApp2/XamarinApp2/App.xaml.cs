@@ -2,6 +2,7 @@ using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using XamarinApp2.Lists;
+using XamarinApp2.Navigation;
 
 [assembly: XamlCompilation (XamlCompilationOptions.Compile)]
 namespace XamarinApp2
@@ -12,7 +13,11 @@ namespace XamarinApp2
 		{
 			InitializeComponent();
 
-			MainPage = new ListViews();
+			MainPage = new NavigationPage (new WelcomePage())
+            {
+                BarBackgroundColor = Color.Gray,
+                BarTextColor = Color.White
+            };
 		}
 
 		protected override void OnStart ()
