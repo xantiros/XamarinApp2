@@ -13,7 +13,7 @@ namespace XamarinApp2
 		{
 			InitializeComponent();
 
-            MainPage = new ContactsPage();
+            MainPage = new TabsPage();
 
 			//MainPage = new NavigationPage (new WelcomePage())
    //         {
