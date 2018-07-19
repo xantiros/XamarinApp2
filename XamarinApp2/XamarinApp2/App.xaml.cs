@@ -13,7 +13,7 @@ namespace XamarinApp2
 		{
 			InitializeComponent();
 
-            MainPage = new NavigationPage(new ToolbarItemsPage());
+            MainPage = new NavigationPage(new NavigationExcercisePage());
 
 			//MainPage = new NavigationPage (new WelcomePage())
    //         {
