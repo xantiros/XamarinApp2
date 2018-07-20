@@ -14,7 +14,7 @@ namespace XamarinApp2
 		{
 			InitializeComponent();
 
-            MainPage = new DateAndTimePickerPage();
+            MainPage = new TableViewPage();
 
 			//MainPage = new NavigationPage (new WelcomePage())
    //         {
