@@ -14,7 +14,7 @@ namespace XamarinApp2
 		{
 			InitializeComponent();
 
-            MainPage = new EntryPage();
+            MainPage = new PickerPage();
 
 			//MainPage = new NavigationPage (new WelcomePage())
    //         {
