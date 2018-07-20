@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinApp2.FormsAndSettings.DateAndTimePickerPage"
+             Padding="40"
+             xmlns:sys ="clr-namespace:System;assembly=mscorlib">
+    <StackLayout>
+        <DatePicker Date="{x:Static sys:DateTime.Today}" Format="d MMM yyyy" DateSelected="DatePicker_DateSelected"/>
+        <TimePicker Time="13:35"/>
+    </StackLayout>
+</ContentPage>
