@@ -1,6 +1,7 @@
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamarinApp2.FormsAndSettings;
 using XamarinApp2.Lists;
 using XamarinApp2.Navigation;
 
@@ -13,7 +14,7 @@ namespace XamarinApp2
 		{
 			InitializeComponent();
 
-            MainPage = new NavigationPage(new NavigationExcercisePage());
+            MainPage = new EntryPage();
 
 			//MainPage = new NavigationPage (new WelcomePage())
    //         {
