@@ -18,7 +18,7 @@ namespace XamarinApp2
 		{
 			InitializeComponent();
 
-            MainPage = new ApplicationPropertiesPage();
+            MainPage = new SQLitePage();
 
 			//MainPage = new NavigationPage (new WelcomePage())
    //         {
