@@ -18,7 +18,7 @@ namespace XamarinApp2
 		{
 			InitializeComponent();
 
-            MainPage = new SQLitePage();
+            MainPage = new RESTfulServicesPage();
 
 			//MainPage = new NavigationPage (new WelcomePage())
    //         {
