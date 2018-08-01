@@ -16,25 +16,32 @@ namespace XamarinApp2.DataAccess
 		{
 			InitializeComponent ();
 
-            if(Application.Current.Properties.ContainsKey("Name"))
-            title.Text = Application.Current.Properties["Name"].ToString();
+            BindingContext = Application.Current;
 
-            if (Application.Current.Properties.ContainsKey("NotificationsEnabled"))
-                notificationsEnabled.On = (bool)Application.Current.Properties["NotificationsEnabled"];
+            //var app = Application.Current as App;
+            //app.Title = title.Text;
+            //app.NotificationsEnabled = notificationsEnabled.On;
+
+            //if (Application.Current.Properties.ContainsKey(TitleKey))
+            //title.Text = Application.Current.Properties[TitleKey].ToString();
+
+            //if (Application.Current.Properties.ContainsKey(NotificationsEnabledKey))
+            //    notificationsEnabled.On = (bool)Application.Current.Properties[NotificationsEnabledKey];
 
 		}
 
-        private void OnChange(object sender, EventArgs e)
-        {
-            Application.Current.Properties["Name"] = title.Text;
-            Application.Current.Properties["NotificationsEnabled"] = notificationsEnabled;
+        //private void OnChange(object sender, EventArgs e)
+        //{
+        //    var app = Application.Current as App;
+        //    app.Title = title.Text;
+        //    app.NotificationsEnabled = notificationsEnabled.On;
 
-            //Application.Current.SavePropertiesAsync();
-        }
+        //    //Application.Current.SavePropertiesAsync();
+        //}
 
-        protected override void OnDisappearing()
-        {
-            base.OnDisappearing();
-        }
+        //protected override void OnDisappearing()
+        //{
+        //    base.OnDisappearing();
+        //}
     }
 }
